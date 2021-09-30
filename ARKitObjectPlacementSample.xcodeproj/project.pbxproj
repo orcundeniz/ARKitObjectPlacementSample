@@ -17,6 +17,7 @@
 		BA43180726FA7BC800B5F984 /* ARObjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA43180626FA7BC800B5F984 /* ARObjectable.swift */; };
 		BA43180926FA7C8F00B5F984 /* ArrowNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA43180826FA7C8F00B5F984 /* ArrowNode.swift */; };
 		BA9998FD27026854001FD526 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9998FC27026854001FD526 /* Extensions.swift */; };
+		BACC70D027060F5D00D317B5 /* ViewController+CoachingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC70CF27060F5D00D317B5 /* ViewController+CoachingOverlay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BA43180626FA7BC800B5F984 /* ARObjectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARObjectable.swift; sourceTree = "<group>"; };
 		BA43180826FA7C8F00B5F984 /* ArrowNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowNode.swift; sourceTree = "<group>"; };
 		BA9998FC27026854001FD526 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BACC70CF27060F5D00D317B5 /* ViewController+CoachingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CoachingOverlay.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				BA4317EF26FA76AD00B5F984 /* AppDelegate.swift */,
 				BA4317F126FA76AD00B5F984 /* SceneDelegate.swift */,
 				BA4317F326FA76AD00B5F984 /* ViewController.swift */,
+				BACC70CF27060F5D00D317B5 /* ViewController+CoachingOverlay.swift */,
 				BA4317F526FA76AD00B5F984 /* Main.storyboard */,
 				BA4317F826FA76AE00B5F984 /* Assets.xcassets */,
 				BA4317FA26FA76AE00B5F984 /* LaunchScreen.storyboard */,
@@ -165,6 +168,7 @@
 				BA4317F226FA76AD00B5F984 /* SceneDelegate.swift in Sources */,
 				BA43180926FA7C8F00B5F984 /* ArrowNode.swift in Sources */,
 				BA9998FD27026854001FD526 /* Extensions.swift in Sources */,
+				BACC70D027060F5D00D317B5 /* ViewController+CoachingOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +317,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 855777TBAB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARKitObjectPlacementSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -320,6 +325,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,6 +346,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 855777TBAB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARKitObjectPlacementSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -347,6 +354,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

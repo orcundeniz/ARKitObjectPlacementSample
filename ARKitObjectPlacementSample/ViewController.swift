@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ARKit
 
 final class ViewController: UIViewController, UIGestureRecognizerDelegate {
 
@@ -28,9 +29,12 @@ final class ViewController: UIViewController, UIGestureRecognizerDelegate {
     /// The tracked screen position used to update the `trackedObject`'s position.
     var currentTrackingPosition: CGPoint?
     
-    
+    let coachingOverlay = ARCoachingOverlayView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupGestures()
+        setupCoachingOverlay()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -50,6 +54,9 @@ final class ViewController: UIViewController, UIGestureRecognizerDelegate {
         return false
     }
     
+    func restartExperience() {
+        arView.runSession()
+    }
     // MARK: - User Actions
     @objc
     func userTapped(_ gesture: UITapGestureRecognizer) {
@@ -196,7 +203,6 @@ final class ViewController: UIViewController, UIGestureRecognizerDelegate {
             // change the color of all the children
             object.geometry?.firstMaterial?.diffuse.contents = color
         })
-        adasdasd
     }
     
     private func updatedTrackingPosition(for object: ARObjectable, from gesture: UIPanGestureRecognizer) -> CGPoint {

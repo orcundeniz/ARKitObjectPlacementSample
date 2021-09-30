@@ -73,6 +73,8 @@ extension ARSCNView {
     
     /// - Tag: DragVirtualObject
     func translate(_ object: ARObjectable, basedOn screenPos: CGPoint, trackedObject: ARObjectable?) {
+        object.stopTrackedRaycast()
+
         // Update the object by using a one-time position request.
         if let raycastQuery = raycastQuery(from: screenPos, allowing: .estimatedPlane, alignment: .any),
            !(session.raycast(raycastQuery).isEmpty) {
@@ -190,34 +192,4 @@ extension ARSCNView {
         object.anchor = newAnchor
         session.add(anchor: newAnchor)
     }
-}
-
-extension ARSCNView {
-
-//    /**
-//     Type conversion wrapper for original `unprojectPoint(_:)` method.
-//     Used in contexts where sticking to SIMD3<Float> type is helpful.
-//     */
-//    func unprojectPoint(_ point: SIMD3<Float>) -> SIMD3<Float> {
-//        return SIMD3<Float>(unprojectPoint(SCNVector3(point)))
-//    }
-//
-//    // - Tag: CastRayForFocusSquarePosition
-//    func castRay(for query: ARRaycastQuery) -> [ARRaycastResult] {
-//        return session.raycast(query)
-//    }
-//
-
-//
-//    var screenCenter: CGPoint {
-//        return CGPoint(x: bounds.midX, y: bounds.midY)
-//    }
-//
-//    func getCameraPosition() -> SCNVector3? {
-//        guard let pointOfView = self.pointOfView else { return nil }
-//        let transform = pointOfView.transform
-//        let cameraPosition = SCNVector3(transform.m41, transform.m42, transform.m43)
-//
-//        return cameraPosition
-//    }
 }
